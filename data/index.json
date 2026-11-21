@@ -1,0 +1,41 @@
+{
+  "reels": [
+    "cut",
+    "film",
+    "shot",
+    "origin",
+    "occurrence",
+    "from_ms",
+    "to_ms"
+  ],
+  "observations": [
+    "id",
+    "cut",
+    "observer",
+    "received",
+    "text"
+  ],
+  "programmes": [
+    "id",
+    "revision",
+    "cuts",
+    "interval_ms",
+    "lights_on",
+    "planned_at"
+  ],
+  "policies": [
+    "event",
+    "public_label",
+    "detail_label",
+    "short_ms",
+    "accumulated_ms",
+    "reset_ms"
+  ],
+  "editor_book": [
+    "id",
+    "subject",
+    "scope",
+    "copy",
+    "signed_at"
+  ]
+}

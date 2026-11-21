@@ -1,0 +1,4 @@
+{"id": "east", "revision": 1, "cuts": ["lantern-a", "night-a"], "interval_ms": [12000], "lights_on": [true], "planned_at": "2026-11-22T12:00:00+08:00"}
+{"id": "east", "revision": 2, "cuts": ["lantern-b", "night-a"], "interval_ms": [12000], "lights_on": [true], "planned_at": "2026-11-22T14:30:00+08:00"}
+{"id": "east", "revision": 3, "cuts": ["lantern-b", "night-a"], "interval_ms": [2500], "lights_on": [false], "planned_at": "2026-11-22T15:30:00+08:00"}
+{"id": "west", "revision": 1, "cuts": ["water-a", "lantern-a"], "interval_ms": [3000], "lights_on": [false], "planned_at": "2026-11-22T14:40:00+08:00"}
