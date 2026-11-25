@@ -1,0 +1,123 @@
+{
+  "programme": "west",
+  "revision": 1,
+  "subject": "west:1",
+  "level": "audience",
+  "draft_version": "draft-44741b4b9d",
+  "signed_ticket_version": null,
+  "planned_at": "2026-11-22T14:40:00+08:00",
+  "ticket_labels": [
+    {
+      "event": "flash",
+      "label": "光线变化"
+    },
+    {
+      "event": "story",
+      "label": "情绪主题"
+    }
+  ],
+  "candidate_labels": [
+    {
+      "event": "flash",
+      "label": "光线变化"
+    },
+    {
+      "event": "story",
+      "label": "情绪主题"
+    }
+  ],
+  "ticket_copy": "本场含光线变化、情绪主题，购票后可按主动选择查看详情。",
+  "curator_signed": false,
+  "publication_state": "draft_requires_curator_signature",
+  "editorial_confirmation": {
+    "confirmed_segment_count": 1,
+    "unconfirmed_segment_count": 1,
+    "unresolved_viewer_question_count": 0
+  },
+  "reservation": null,
+  "selected": [
+    "flash",
+    "sound",
+    "story"
+  ],
+  "invalid_selection": [],
+  "details": {
+    "flash": {
+      "event": "flash",
+      "label": "连续闪烁",
+      "status": "warning",
+      "clearance": {
+        "event": "flash",
+        "overall": "positive",
+        "cuts": [
+          {
+            "cut": "water-a",
+            "status": "negative_observed_pending_editor",
+            "positive_count": 0,
+            "open_question_count": 0,
+            "negative_observation_count": 1
+          },
+          {
+            "cut": "lantern-a",
+            "status": "positive",
+            "positive_count": 2,
+            "open_question_count": 0,
+            "negative_observation_count": 0
+          }
+        ],
+        "all_clear_allowed": false,
+        "reason": null
+      },
+      "cumulative_warning": true,
+      "details": [
+        "第2部走廊：持续约6秒，灯切1次",
+        "第2部走廊（第2次出现的同段素材）：持续约4秒",
+        "同一亮灯休息区间内累计约 10秒，达到 7.6秒 累计提醒口径。"
+      ],
+      "reset_rule": "只有亮灯且休息至少 10秒 才重新计算。"
+    },
+    "sound": {
+      "event": "sound",
+      "label": "突然高音量",
+      "status": "negative_not_publishable",
+      "clearance": {
+        "event": "sound",
+        "overall": "negative_not_publishable",
+        "cuts": [
+          {
+            "cut": "water-a",
+            "status": "negative_observed_pending_editor",
+            "positive_count": 0,
+            "open_question_count": 0,
+            "negative_observation_count": 1
+          },
+          {
+            "cut": "lantern-a",
+            "status": "no_observation",
+            "positive_count": 0,
+            "open_question_count": 0,
+            "negative_observation_count": 0
+          }
+        ],
+        "all_clear_allowed": false,
+        "reason": "只有编审签认后的逐片否定结论才能发布全场无此内容"
+      },
+      "cumulative_warning": false,
+      "details": [
+        "暂无达到提醒口径的正证据；现有否定观察尚未全部经编审签认，不能发布全场无此内容结论。"
+      ],
+      "reset_rule": "只有亮灯且休息至少 10秒 才重新计算。"
+    },
+    "story": {
+      "event": "story",
+      "label": "亲属失联与等待",
+      "status": "warning",
+      "themes": [
+        "亲属失联与等待"
+      ],
+      "advice": "含观众希望避开的叙事主题；具体结尾和转折不包含在本披露层。",
+      "ending_disclosure": "redacted"
+    }
+  },
+  "ending_disclosure": "redacted"
+}

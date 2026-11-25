@@ -1,0 +1,787 @@
+{
+  "issuance": {
+    "id": "t8",
+    "subject": "east:1",
+    "scope": "出票",
+    "copy": "普通票｜售票提示 s2",
+    "signed_at": "2026-11-22T14:20:00+08:00"
+  },
+  "basis": {
+    "subject": "east:1",
+    "programme_revision": {
+      "id": "east",
+      "revision": 1,
+      "cuts": [
+        "lantern-a",
+        "night-a"
+      ],
+      "interval_ms": [
+        12000
+      ],
+      "lights_on": [
+        true
+      ],
+      "planned_at": "2026-11-22T12:00:00+08:00"
+    },
+    "advisory_id": "s2",
+    "advisory_signature": {
+      "id": "s2",
+      "subject": "east:1",
+      "scope": "售票",
+      "copy": "含光线变化和离别主题。",
+      "signed_at": "2026-11-22T14:12:00+08:00"
+    }
+  },
+  "current_subject": "east:3",
+  "stale": true,
+  "changes_since_issue": [
+    {
+      "type": "cut_changed",
+      "position": 1,
+      "from": "lantern-a",
+      "to": "lantern-b",
+      "effective_revision": 2
+    },
+    {
+      "type": "break_rule_changed",
+      "between_positions": [
+        1,
+        2
+      ],
+      "effective_revision": 3,
+      "from": {
+        "interval_ms": 12000,
+        "lights_on": true
+      },
+      "to": {
+        "interval_ms": 2500,
+        "lights_on": false
+      }
+    }
+  ],
+  "affected_pages": [
+    {
+      "page_id": "sales-page:east:普通票",
+      "page_id_basis": "derived_from_issuance_ticket_class",
+      "issuance_id": "t8",
+      "ticket_class": "普通票",
+      "subject_at_issue": "east:1",
+      "advisory_version": "s2",
+      "current_subject": "east:3",
+      "current_advisory_version": null,
+      "needs_replacement": true,
+      "replacement": "须先由策展人签发当前场次版本的售票提示"
+    }
+  ],
+  "current_draft_version": "draft-2ac62ca7c4",
+  "current_signed_ticket_version": null,
+  "pending_reservations": [],
+  "revision_planned_at": "2026-11-22T15:30:00+08:00",
+  "at_planned_reservations": [
+    {
+      "kind": "viewer_recheck",
+      "cut": "lantern-b",
+      "event": "flash",
+      "shot": "b3",
+      "observation_id": "o4",
+      "message": "换版后的剪辑身份/原话或刺激范围尚未经看片人确认",
+      "quote": "灯箱是否闪还没复看。"
+    }
+  ],
+  "at_planned_audience_query": {
+    "programme": "east",
+    "revision": 3,
+    "subject": "east:3",
+    "level": "audience",
+    "draft_version": "draft-fb5679f150",
+    "signed_ticket_version": null,
+    "planned_at": "2026-11-22T15:30:00+08:00",
+    "ticket_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "candidate_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "ticket_copy": "本场含光线变化、声响变化、情绪主题，购票后可按主动选择查看详情。",
+    "curator_signed": false,
+    "publication_state": "draft_requires_curator_signature",
+    "editorial_confirmation": {
+      "confirmed_segment_count": 1,
+      "unconfirmed_segment_count": 2,
+      "unresolved_viewer_question_count": 1
+    },
+    "reservation": "有换版剪辑或原始表述仍在复核；在看片/编审确认前，不发布全场‘无此内容’结论。",
+    "selected": [
+      "flash",
+      "sound",
+      "story"
+    ],
+    "invalid_selection": [],
+    "details": {
+      "flash": {
+        "event": "flash",
+        "label": "连续闪烁",
+        "status": "warning",
+        "clearance": {
+          "event": "flash",
+          "overall": "positive_with_reservations",
+          "cuts": [
+            {
+              "cut": "lantern-b",
+              "status": "positive_with_reservation",
+              "positive_count": 1,
+              "open_question_count": 1,
+              "negative_observation_count": 0
+            },
+            {
+              "cut": "night-a",
+              "status": "positive",
+              "positive_count": 1,
+              "open_question_count": 0,
+              "negative_observation_count": 0
+            }
+          ],
+          "all_clear_allowed": false,
+          "reason": "至少一部片仍不确定；即使另有正证据，也必须同时保留对应意见"
+        },
+        "cumulative_warning": true,
+        "details": [
+          "第1部走廊（第2次出现的同段素材）：持续约4秒",
+          "第2部过道：范围约5.4秒，灯切5次",
+          "同一亮灯休息区间内累计约 9.4秒，达到 7.6秒 累计提醒口径。"
+        ],
+        "reset_rule": "只有亮灯且休息至少 10秒 才重新计算。"
+      },
+      "sound": {
+        "event": "sound",
+        "label": "突然高音量",
+        "status": "warning",
+        "clearance": {
+          "event": "sound",
+          "overall": "positive",
+          "cuts": [
+            {
+              "cut": "lantern-b",
+              "status": "negative_observed_pending_editor",
+              "positive_count": 0,
+              "open_question_count": 0,
+              "negative_observation_count": 1
+            },
+            {
+              "cut": "night-a",
+              "status": "positive",
+              "positive_count": 1,
+              "open_question_count": 0,
+              "negative_observation_count": 0
+            }
+          ],
+          "all_clear_allowed": false,
+          "reason": null
+        },
+        "cumulative_warning": false,
+        "details": [
+          "第2部排练段：持续约瞬时",
+          "该类突发刺激按场地词表为出现即提示。"
+        ],
+        "reset_rule": "只有亮灯且休息至少 10秒 才重新计算。"
+      },
+      "story": {
+        "event": "story",
+        "label": "亲属失联与等待",
+        "status": "warning",
+        "themes": [
+          "亲属失联与等待"
+        ],
+        "advice": "含观众希望避开的叙事主题；具体结尾和转折不包含在本披露层。",
+        "ending_disclosure": "redacted"
+      }
+    },
+    "ending_disclosure": "redacted"
+  },
+  "at_planned_staff_query": {
+    "programme": "east",
+    "revision": 3,
+    "subject": "east:3",
+    "level": "staff",
+    "draft_version": "draft-fb5679f150",
+    "signed_ticket_version": null,
+    "planned_at": "2026-11-22T15:30:00+08:00",
+    "ticket_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "candidate_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "ticket_copy": "本场含光线变化、声响变化、情绪主题，购票后可按主动选择查看详情。",
+    "curator_signed": false,
+    "publication_state": "draft_requires_curator_signature",
+    "editorial_confirmation": {
+      "confirmed_segment_count": 1,
+      "unconfirmed_segment_count": 2,
+      "unresolved_viewer_question_count": 1
+    },
+    "reservation": "有换版剪辑或原始表述仍在复核；在看片/编审确认前，不发布全场‘无此内容’结论。",
+    "rest_points": [],
+    "all_boundaries": [
+      {
+        "after_index": 0,
+        "after_cut": "lantern-b",
+        "before_cut": "night-a",
+        "interval_ms": 2500,
+        "lights_on": false,
+        "reset_ms": 10000,
+        "staff_rest": false,
+        "aggregation_resets": {
+          "flash": false,
+          "sound": false
+        },
+        "instruction": "第1、2部之间仅有 2.5 秒且 lights_on=False，不构成亮灯休息/重置。"
+      }
+    ],
+    "cue_sheet": [
+      {
+        "event": "flash",
+        "detail_label": "连续闪烁",
+        "cut": "lantern-b",
+        "shot": "b2",
+        "origin": "hall",
+        "occurrence": 2,
+        "cut_relative_ms": [
+          12500,
+          16500
+        ],
+        "programme_relative_ms": [
+          12500,
+          16500
+        ],
+        "duration_ms": 4000,
+        "intensity": "moderate",
+        "evidence_ids": [
+          "o1",
+          "o2"
+        ],
+        "confirmed_by": [
+          "s1"
+        ],
+        "block_index": 0
+      },
+      {
+        "event": "sound",
+        "detail_label": "突然高音量",
+        "cut": "night-a",
+        "shot": "n1",
+        "origin": "rehearsal",
+        "occurrence": 1,
+        "cut_relative_ms": [
+          5000,
+          5000
+        ],
+        "programme_relative_ms": [
+          43100,
+          43100
+        ],
+        "duration_ms": 0,
+        "intensity": "high",
+        "evidence_ids": [
+          "o3",
+          "o5"
+        ],
+        "confirmed_by": [],
+        "block_index": 0
+      },
+      {
+        "event": "flash",
+        "detail_label": "连续闪烁",
+        "cut": "night-a",
+        "shot": "n2",
+        "origin": "walkway",
+        "occurrence": 1,
+        "cut_relative_ms": [
+          6600,
+          12000
+        ],
+        "programme_relative_ms": [
+          44700,
+          50100
+        ],
+        "duration_ms": 5400,
+        "intensity": "moderate",
+        "evidence_ids": [
+          "o3"
+        ],
+        "confirmed_by": [],
+        "block_index": 0
+      }
+    ],
+    "reservations": [
+      {
+        "kind": "viewer_recheck",
+        "cut": "lantern-b",
+        "event": "flash",
+        "shot": "b3",
+        "observation_id": "o4",
+        "message": "换版后的剪辑身份/原话或刺激范围尚未经看片人确认",
+        "quote": "灯箱是否闪还没复看。"
+      }
+    ],
+    "event_clearance": {
+      "flash": {
+        "event": "flash",
+        "overall": "positive_with_reservations",
+        "cuts": [
+          {
+            "cut": "lantern-b",
+            "status": "positive_with_reservation",
+            "positive_count": 1,
+            "open_question_count": 1,
+            "negative_observation_count": 0
+          },
+          {
+            "cut": "night-a",
+            "status": "positive",
+            "positive_count": 1,
+            "open_question_count": 0,
+            "negative_observation_count": 0
+          }
+        ],
+        "all_clear_allowed": false,
+        "reason": "至少一部片仍不确定；即使另有正证据，也必须同时保留对应意见"
+      },
+      "sound": {
+        "event": "sound",
+        "overall": "positive",
+        "cuts": [
+          {
+            "cut": "lantern-b",
+            "status": "negative_observed_pending_editor",
+            "positive_count": 0,
+            "open_question_count": 0,
+            "negative_observation_count": 1
+          },
+          {
+            "cut": "night-a",
+            "status": "positive",
+            "positive_count": 1,
+            "open_question_count": 0,
+            "negative_observation_count": 0
+          }
+        ],
+        "all_clear_allowed": false,
+        "reason": null
+      }
+    },
+    "cut_status": [
+      {
+        "cut": "lantern-b",
+        "film": "F01",
+        "viewer_status": "needs_viewer",
+        "open_question_count": 1,
+        "open_questions": [
+          {
+            "observation_id": "o4",
+            "event": "flash",
+            "quote": "灯箱是否闪还没复看。"
+          }
+        ]
+      },
+      {
+        "cut": "night-a",
+        "film": "F02",
+        "viewer_status": "clear",
+        "open_question_count": 0,
+        "open_questions": []
+      }
+    ],
+    "story_detail": {
+      "label": "亲属失联与等待",
+      "themes": [
+        "亲属失联与等待"
+      ],
+      "ending_disclosure": "redacted_at_staff_level"
+    }
+  },
+  "updated_audience_query": {
+    "programme": "east",
+    "revision": 3,
+    "subject": "east:3",
+    "level": "audience",
+    "draft_version": "draft-2ac62ca7c4",
+    "signed_ticket_version": null,
+    "planned_at": "2026-11-22T15:30:00+08:00",
+    "ticket_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "candidate_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "ticket_copy": "本场含光线变化、声响变化、情绪主题，购票后可按主动选择查看详情。",
+    "curator_signed": false,
+    "publication_state": "draft_requires_curator_signature",
+    "editorial_confirmation": {
+      "confirmed_segment_count": 1,
+      "unconfirmed_segment_count": 2,
+      "unresolved_viewer_question_count": 0
+    },
+    "reservation": null,
+    "selected": [
+      "flash",
+      "sound",
+      "story"
+    ],
+    "invalid_selection": [],
+    "details": {
+      "flash": {
+        "event": "flash",
+        "label": "连续闪烁",
+        "status": "warning",
+        "clearance": {
+          "event": "flash",
+          "overall": "positive",
+          "cuts": [
+            {
+              "cut": "lantern-b",
+              "status": "positive",
+              "positive_count": 1,
+              "open_question_count": 0,
+              "negative_observation_count": 1
+            },
+            {
+              "cut": "night-a",
+              "status": "positive",
+              "positive_count": 1,
+              "open_question_count": 0,
+              "negative_observation_count": 0
+            }
+          ],
+          "all_clear_allowed": false,
+          "reason": null
+        },
+        "cumulative_warning": true,
+        "details": [
+          "第1部走廊（第2次出现的同段素材）：持续约4秒",
+          "第2部过道：范围约5.4秒，灯切5次",
+          "同一亮灯休息区间内累计约 9.4秒，达到 7.6秒 累计提醒口径。"
+        ],
+        "reset_rule": "只有亮灯且休息至少 10秒 才重新计算。"
+      },
+      "sound": {
+        "event": "sound",
+        "label": "突然高音量",
+        "status": "warning",
+        "clearance": {
+          "event": "sound",
+          "overall": "positive",
+          "cuts": [
+            {
+              "cut": "lantern-b",
+              "status": "negative_observed_pending_editor",
+              "positive_count": 0,
+              "open_question_count": 0,
+              "negative_observation_count": 1
+            },
+            {
+              "cut": "night-a",
+              "status": "positive",
+              "positive_count": 1,
+              "open_question_count": 0,
+              "negative_observation_count": 0
+            }
+          ],
+          "all_clear_allowed": false,
+          "reason": null
+        },
+        "cumulative_warning": false,
+        "details": [
+          "第2部排练段：持续约瞬时",
+          "该类突发刺激按场地词表为出现即提示。"
+        ],
+        "reset_rule": "只有亮灯且休息至少 10秒 才重新计算。"
+      },
+      "story": {
+        "event": "story",
+        "label": "亲属失联与等待",
+        "status": "warning",
+        "themes": [
+          "亲属失联与等待"
+        ],
+        "advice": "含观众希望避开的叙事主题；具体结尾和转折不包含在本披露层。",
+        "ending_disclosure": "redacted"
+      }
+    },
+    "ending_disclosure": "redacted"
+  },
+  "updated_staff_query": {
+    "programme": "east",
+    "revision": 3,
+    "subject": "east:3",
+    "level": "staff",
+    "draft_version": "draft-2ac62ca7c4",
+    "signed_ticket_version": null,
+    "planned_at": "2026-11-22T15:30:00+08:00",
+    "ticket_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "candidate_labels": [
+      {
+        "event": "flash",
+        "label": "光线变化"
+      },
+      {
+        "event": "sound",
+        "label": "声响变化"
+      },
+      {
+        "event": "story",
+        "label": "情绪主题"
+      }
+    ],
+    "ticket_copy": "本场含光线变化、声响变化、情绪主题，购票后可按主动选择查看详情。",
+    "curator_signed": false,
+    "publication_state": "draft_requires_curator_signature",
+    "editorial_confirmation": {
+      "confirmed_segment_count": 1,
+      "unconfirmed_segment_count": 2,
+      "unresolved_viewer_question_count": 0
+    },
+    "reservation": null,
+    "rest_points": [],
+    "all_boundaries": [
+      {
+        "after_index": 0,
+        "after_cut": "lantern-b",
+        "before_cut": "night-a",
+        "interval_ms": 2500,
+        "lights_on": false,
+        "reset_ms": 10000,
+        "staff_rest": false,
+        "aggregation_resets": {
+          "flash": false,
+          "sound": false
+        },
+        "instruction": "第1、2部之间仅有 2.5 秒且 lights_on=False，不构成亮灯休息/重置。"
+      }
+    ],
+    "cue_sheet": [
+      {
+        "event": "flash",
+        "detail_label": "连续闪烁",
+        "cut": "lantern-b",
+        "shot": "b2",
+        "origin": "hall",
+        "occurrence": 2,
+        "cut_relative_ms": [
+          12500,
+          16500
+        ],
+        "programme_relative_ms": [
+          12500,
+          16500
+        ],
+        "duration_ms": 4000,
+        "intensity": "moderate",
+        "evidence_ids": [
+          "o1",
+          "o2"
+        ],
+        "confirmed_by": [
+          "s1"
+        ],
+        "block_index": 0
+      },
+      {
+        "event": "sound",
+        "detail_label": "突然高音量",
+        "cut": "night-a",
+        "shot": "n1",
+        "origin": "rehearsal",
+        "occurrence": 1,
+        "cut_relative_ms": [
+          5000,
+          5000
+        ],
+        "programme_relative_ms": [
+          43100,
+          43100
+        ],
+        "duration_ms": 0,
+        "intensity": "high",
+        "evidence_ids": [
+          "o3",
+          "o5"
+        ],
+        "confirmed_by": [],
+        "block_index": 0
+      },
+      {
+        "event": "flash",
+        "detail_label": "连续闪烁",
+        "cut": "night-a",
+        "shot": "n2",
+        "origin": "walkway",
+        "occurrence": 1,
+        "cut_relative_ms": [
+          6600,
+          12000
+        ],
+        "programme_relative_ms": [
+          44700,
+          50100
+        ],
+        "duration_ms": 5400,
+        "intensity": "moderate",
+        "evidence_ids": [
+          "o3"
+        ],
+        "confirmed_by": [],
+        "block_index": 0
+      }
+    ],
+    "reservations": [],
+    "event_clearance": {
+      "flash": {
+        "event": "flash",
+        "overall": "positive",
+        "cuts": [
+          {
+            "cut": "lantern-b",
+            "status": "positive",
+            "positive_count": 1,
+            "open_question_count": 0,
+            "negative_observation_count": 1
+          },
+          {
+            "cut": "night-a",
+            "status": "positive",
+            "positive_count": 1,
+            "open_question_count": 0,
+            "negative_observation_count": 0
+          }
+        ],
+        "all_clear_allowed": false,
+        "reason": null
+      },
+      "sound": {
+        "event": "sound",
+        "overall": "positive",
+        "cuts": [
+          {
+            "cut": "lantern-b",
+            "status": "negative_observed_pending_editor",
+            "positive_count": 0,
+            "open_question_count": 0,
+            "negative_observation_count": 1
+          },
+          {
+            "cut": "night-a",
+            "status": "positive",
+            "positive_count": 1,
+            "open_question_count": 0,
+            "negative_observation_count": 0
+          }
+        ],
+        "all_clear_allowed": false,
+        "reason": null
+      }
+    },
+    "cut_status": [
+      {
+        "cut": "lantern-b",
+        "film": "F01",
+        "viewer_status": "clear",
+        "open_question_count": 0,
+        "open_questions": []
+      },
+      {
+        "cut": "night-a",
+        "film": "F02",
+        "viewer_status": "clear",
+        "open_question_count": 0,
+        "open_questions": []
+      }
+    ],
+    "story_detail": {
+      "label": "亲属失联与等待",
+      "themes": [
+        "亲属失联与等待"
+      ],
+      "ending_disclosure": "redacted_at_staff_level"
+    }
+  }
+}

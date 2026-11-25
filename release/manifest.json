@@ -1,0 +1,15 @@
+{
+  "out_dir": "release",
+  "files": [
+    "release/east-r3.public.json",
+    "release/east-r3.audience.json",
+    "release/east-r3.staff.json",
+    "release/west-r1.public.json",
+    "release/west-r1.audience.json",
+    "release/west-r1.staff.json",
+    "release/stale-pages.json",
+    "release/trace-t8.json",
+    "release/booklet.md",
+    "release/site-handover.md"
+  ]
+}

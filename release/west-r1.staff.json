@@ -1,0 +1,177 @@
+{
+  "programme": "west",
+  "revision": 1,
+  "subject": "west:1",
+  "level": "staff",
+  "draft_version": "draft-44741b4b9d",
+  "signed_ticket_version": null,
+  "planned_at": "2026-11-22T14:40:00+08:00",
+  "ticket_labels": [
+    {
+      "event": "flash",
+      "label": "光线变化"
+    },
+    {
+      "event": "story",
+      "label": "情绪主题"
+    }
+  ],
+  "candidate_labels": [
+    {
+      "event": "flash",
+      "label": "光线变化"
+    },
+    {
+      "event": "story",
+      "label": "情绪主题"
+    }
+  ],
+  "ticket_copy": "本场含光线变化、情绪主题，购票后可按主动选择查看详情。",
+  "curator_signed": false,
+  "publication_state": "draft_requires_curator_signature",
+  "editorial_confirmation": {
+    "confirmed_segment_count": 1,
+    "unconfirmed_segment_count": 1,
+    "unresolved_viewer_question_count": 0
+  },
+  "reservation": null,
+  "rest_points": [],
+  "all_boundaries": [
+    {
+      "after_index": 0,
+      "after_cut": "water-a",
+      "before_cut": "lantern-a",
+      "interval_ms": 3000,
+      "lights_on": false,
+      "reset_ms": 10000,
+      "staff_rest": false,
+      "aggregation_resets": {
+        "flash": false,
+        "sound": false
+      },
+      "instruction": "第1、2部之间仅有 3 秒且 lights_on=False，不构成亮灯休息/重置。"
+    }
+  ],
+  "cue_sheet": [
+    {
+      "event": "flash",
+      "detail_label": "连续闪烁",
+      "cut": "lantern-a",
+      "shot": "a2",
+      "origin": "hall",
+      "occurrence": 1,
+      "cut_relative_ms": [
+        12500,
+        18500
+      ],
+      "programme_relative_ms": [
+        32500,
+        38500
+      ],
+      "duration_ms": 6000,
+      "intensity": "high",
+      "evidence_ids": [
+        "o1",
+        "o2"
+      ],
+      "confirmed_by": [],
+      "block_index": 0
+    },
+    {
+      "event": "flash",
+      "detail_label": "连续闪烁",
+      "cut": "lantern-a",
+      "shot": "a3",
+      "origin": "hall",
+      "occurrence": 2,
+      "cut_relative_ms": [
+        19000,
+        23000
+      ],
+      "programme_relative_ms": [
+        39000,
+        43000
+      ],
+      "duration_ms": 4000,
+      "intensity": "moderate",
+      "evidence_ids": [
+        "o1",
+        "o2"
+      ],
+      "confirmed_by": [
+        "s1"
+      ],
+      "block_index": 0
+    }
+  ],
+  "reservations": [],
+  "event_clearance": {
+    "flash": {
+      "event": "flash",
+      "overall": "positive",
+      "cuts": [
+        {
+          "cut": "water-a",
+          "status": "negative_observed_pending_editor",
+          "positive_count": 0,
+          "open_question_count": 0,
+          "negative_observation_count": 1
+        },
+        {
+          "cut": "lantern-a",
+          "status": "positive",
+          "positive_count": 2,
+          "open_question_count": 0,
+          "negative_observation_count": 0
+        }
+      ],
+      "all_clear_allowed": false,
+      "reason": null
+    },
+    "sound": {
+      "event": "sound",
+      "overall": "negative_not_publishable",
+      "cuts": [
+        {
+          "cut": "water-a",
+          "status": "negative_observed_pending_editor",
+          "positive_count": 0,
+          "open_question_count": 0,
+          "negative_observation_count": 1
+        },
+        {
+          "cut": "lantern-a",
+          "status": "no_observation",
+          "positive_count": 0,
+          "open_question_count": 0,
+          "negative_observation_count": 0
+        }
+      ],
+      "all_clear_allowed": false,
+      "reason": "只有编审签认后的逐片否定结论才能发布全场无此内容"
+    }
+  },
+  "cut_status": [
+    {
+      "cut": "water-a",
+      "film": "F03",
+      "viewer_status": "clear",
+      "open_question_count": 0,
+      "open_questions": []
+    },
+    {
+      "cut": "lantern-a",
+      "film": "F01",
+      "viewer_status": "clear",
+      "open_question_count": 0,
+      "open_questions": []
+    }
+  ],
+  "story_detail": {
+    "label": "亲属失联与等待",
+    "themes": [
+      "亲属失联与等待"
+    ],
+    "ending_disclosure": "redacted_at_staff_level"
+  }
+}

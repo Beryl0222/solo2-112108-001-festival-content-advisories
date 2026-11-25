@@ -1,0 +1,16 @@
+{
+  "pages": [
+    {
+      "page_id": "sales-page:east:普通票",
+      "page_id_basis": "derived_from_issuance_ticket_class",
+      "issuance_id": "t8",
+      "ticket_class": "普通票",
+      "subject_at_issue": "east:1",
+      "advisory_version": "s2",
+      "current_subject": "east:3",
+      "current_advisory_version": null,
+      "needs_replacement": true,
+      "replacement": "须先由策展人签发当前场次版本的售票提示"
+    }
+  ]
+}
